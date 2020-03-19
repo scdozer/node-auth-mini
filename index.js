@@ -27,13 +27,10 @@ passport.serializeUser(function(user, done) {
   });
 });
 
-
 //really dont understand this one
 passport.deserializeUser(function(obj, done) {
   done(null, obj);
 });
-
-
 
 //endpoints
 app.get( '/login',
